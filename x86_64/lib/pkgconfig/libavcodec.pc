@@ -1,0 +1,14 @@
+prefix=/home/maker/build/ffmpeg/x86_64
+exec_prefix=${prefix}
+libdir=/home/maker/build/ffmpeg/x86_64/lib
+includedir=/home/maker/build/ffmpeg/x86_64/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.19.101
+Requires: 
+Requires.private: libswresample >= 5.3.100, libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -L/home/maker/build/external/x86_64/lib -lvpx -lm -L/home/maker/build/external/x86_64/lib -lvpx -lm -L/home/maker/build/external/x86_64/lib -lvpx -lm -L/home/maker/build/external/x86_64/lib -lvpx -lm -pthread -lm -latomic -L/home/maker/build/external/x86_64/lib -ldav1d -pthread -ldl -L/home/maker/build/external/x86_64/lib -laom -lmp3lame -lm -L/home/maker/build/external/x86_64/lib -lopus -L/home/maker/build/external/x86_64/lib -lspeex -ltwolame -L/home/maker/build/external/x86_64/lib -lwebp -L/home/maker/build/external/x86_64/lib -lx264 -lm -L/home/maker/build/external/x86_64/lib -lx265 -lz
+Cflags: -I${includedir}

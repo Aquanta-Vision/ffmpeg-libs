@@ -1,0 +1,14 @@
+prefix=/home/maker/build/ffmpeg/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/maker/build/ffmpeg/armeabi-v7a/lib
+includedir=/home/maker/build/ffmpeg/armeabi-v7a/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.19.101
+Requires: 
+Requires.private: libswresample >= 5.3.100, libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -L/home/maker/build/external/armeabi-v7a/lib -lvpx -lm -L/home/maker/build/external/armeabi-v7a/lib -lvpx -lm -L/home/maker/build/external/armeabi-v7a/lib -lvpx -lm -L/home/maker/build/external/armeabi-v7a/lib -lvpx -lm -pthread -lm -latomic -L/home/maker/build/external/armeabi-v7a/lib -ldav1d -pthread -ldl -L/home/maker/build/external/armeabi-v7a/lib -laom -lmp3lame -lm -L/home/maker/build/external/armeabi-v7a/lib -lopus -L/home/maker/build/external/armeabi-v7a/lib -lspeex -ltwolame -L/home/maker/build/external/armeabi-v7a/lib -lwebp -L/home/maker/build/external/armeabi-v7a/lib -lx264 -lm -L/home/maker/build/external/armeabi-v7a/lib -lx265 -lz
+Cflags: -I${includedir}
