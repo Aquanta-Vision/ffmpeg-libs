@@ -1,3 +1,3 @@
-# ffmpeg-android-libs
+# ffmpeg-libs
 
-Build according to [ffmpeg-android-maker](https://github.com/Javernaut/ffmpeg-android-maker)
+MacOS libraries obtained from [Ffmpeg-macos](https://github.com/ColorsWind/FFmpeg-macOS)

@@ -1,0 +1,14 @@
+prefix=/Users/runner/work/FFmpeg-macOS/FFmpeg-macOS/ffmpeg/install_arm64
+exec_prefix=${prefix}
+libdir=/Users/runner/work/FFmpeg-macOS/FFmpeg-macOS/ffmpeg/install_arm64/lib
+includedir=/Users/runner/work/FFmpeg-macOS/FFmpeg-macOS/ffmpeg/install_arm64/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 8.24.100
+Requires: 
+Requires.private: libswscale >= 6.4.100, libavformat >= 59.16.100, libavcodec >= 59.18.100, libswresample >= 4.3.100, libavutil >= 57.17.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -framework OpenGL -framework OpenGL -pthread -lm -framework Metal -framework VideoToolbox -framework CoreImage -framework AppKit -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Cflags: -I${includedir}
