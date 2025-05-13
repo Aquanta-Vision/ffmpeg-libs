@@ -16,7 +16,7 @@ This repository contains pre-compiled FFmpeg libraries for various platforms. Ea
 
 1.  **Clone the repository and switch to the desired branch:**
     ```bash
-    git clone https://your-repository-url/ffmpeg-libs.git
+    git clone https://MarlovOne/ffmpeg-libs.git
     cd ffmpeg-libs
     git checkout <branch-name> 
     ```
