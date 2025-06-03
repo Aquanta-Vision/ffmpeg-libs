@@ -1,14 +1,14 @@
-prefix=/home/maker/build/ffmpeg/x86_64
+prefix=/home/marcu/ffmpeg-x86_64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/maker/build/ffmpeg/x86_64/lib
-includedir=/home/maker/build/ffmpeg/x86_64/include
+libdir=/home/marcu/ffmpeg-x86_64-n4.4.1/lib
+includedir=/home/marcu/ffmpeg-x86_64-n4.4.1/include
 
 Name: libavutil
 Description: FFmpeg utility library
-Version: 59.39.100
+Version: 56.70.100
 Requires: 
 Requires.private: 
 Conflicts:
 Libs: -L${libdir}  -lavutil 
-Libs.private: -pthread -lm -latomic -landroid -lmediandk
+Libs.private: -pthread -lm -lXv -lX11 -lXext
 Cflags: -I${includedir}

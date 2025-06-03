@@ -1,14 +1,14 @@
-prefix=/home/maker/build/ffmpeg/x86_64
+prefix=/home/marcu/ffmpeg-x86_64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/maker/build/ffmpeg/x86_64/lib
-includedir=/home/maker/build/ffmpeg/x86_64/include
+libdir=/home/marcu/ffmpeg-x86_64-n4.4.1/lib
+includedir=/home/marcu/ffmpeg-x86_64-n4.4.1/include
 
 Name: libavfilter
 Description: FFmpeg audio/video filtering library
-Version: 10.4.100
+Version: 7.110.100
 Requires: 
-Requires.private: libswscale >= 8.3.100, libpostproc >= 58.3.100, libavformat >= 61.7.100, libavcodec >= 61.19.101, libswresample >= 5.3.100, libavutil >= 59.39.100
+Requires.private: libswscale >= 5.9.100, libavformat >= 58.76.100, libavcodec >= 58.134.100, libswresample >= 3.9.100, libavutil >= 56.70.100
 Conflicts:
 Libs: -L${libdir}  -lavfilter 
-Libs.private: -pthread -lm -latomic -L/home/maker/build/external/x86_64/lib -lfreetype -lz
+Libs.private: -pthread -lm
 Cflags: -I${includedir}
