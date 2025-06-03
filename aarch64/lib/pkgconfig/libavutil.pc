@@ -1,0 +1,14 @@
+prefix=/home/marcu/ffmpeg-aarch64
+exec_prefix=${prefix}
+libdir=/home/marcu/ffmpeg-aarch64/lib
+includedir=/home/marcu/ffmpeg-aarch64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 60.3.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm -latomic -pthread
+Cflags: -I${includedir}

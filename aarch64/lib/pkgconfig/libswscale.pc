@@ -1,0 +1,14 @@
+prefix=/home/marcu/ffmpeg-aarch64
+exec_prefix=${prefix}
+libdir=/home/marcu/ffmpeg-aarch64/lib
+includedir=/home/marcu/ffmpeg-aarch64/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 9.0.100
+Requires: 
+Requires.private: libavutil >= 60.3.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

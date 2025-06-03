@@ -1,0 +1,14 @@
+prefix=/home/marcu/ffmpeg-aarch64
+exec_prefix=${prefix}
+libdir=/home/marcu/ffmpeg-aarch64/lib
+includedir=/home/marcu/ffmpeg-aarch64/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 6.0.100
+Requires: 
+Requires.private: libavutil >= 60.3.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
