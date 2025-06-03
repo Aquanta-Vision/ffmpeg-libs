@@ -1,14 +1,14 @@
-prefix=/home/marcu/ffmpeg-aarch64
+prefix=/home/marcu/ffmpeg-aarch64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/marcu/ffmpeg-aarch64/lib
-includedir=/home/marcu/ffmpeg-aarch64/include
+libdir=/home/marcu/ffmpeg-aarch64-n4.4.1/lib
+includedir=/home/marcu/ffmpeg-aarch64-n4.4.1/include
 
 Name: libavdevice
 Description: FFmpeg device handling library
-Version: 62.0.100
+Version: 58.13.100
 Requires: 
-Requires.private: libavfilter >= 11.0.100, libswscale >= 9.0.100, libavformat >= 62.0.102, libavcodec >= 62.3.101, libswresample >= 6.0.100, libavutil >= 60.3.100
+Requires.private: libavfilter >= 7.110.100, libswscale >= 5.9.100, libavformat >= 58.76.100, libavcodec >= 58.134.100, libswresample >= 3.9.100, libavutil >= 56.70.100
 Conflicts:
 Libs: -L${libdir}  -lavdevice 
-Libs.private: -lm -latomic
+Libs.private: -lm
 Cflags: -I${includedir}
