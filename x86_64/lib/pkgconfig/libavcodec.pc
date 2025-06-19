@@ -1,7 +1,7 @@
-prefix=/home/marcu/ffmpeg-x86_64-n4.4.1
+prefix=/home/marcu22/ffmpeg-x86_64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/marcu/ffmpeg-x86_64-n4.4.1/lib
-includedir=/home/marcu/ffmpeg-x86_64-n4.4.1/include
+libdir=/home/marcu22/ffmpeg-x86_64-n4.4.1/lib
+includedir=/home/marcu22/ffmpeg-x86_64-n4.4.1/include
 
 Name: libavcodec
 Description: FFmpeg codec library
@@ -10,5 +10,5 @@ Requires:
 Requires.private: libswresample >= 3.9.100, libavutil >= 56.70.100
 Conflicts:
 Libs: -L${libdir}  -lavcodec 
-Libs.private: -pthread -lm -llzma -lz
+Libs.private: -pthread -lm
 Cflags: -I${includedir}

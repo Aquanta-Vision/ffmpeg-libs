@@ -1,7 +1,7 @@
-prefix=/home/marcu/ffmpeg-x86_64-n4.4.1
+prefix=/home/marcu22/ffmpeg-x86_64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/marcu/ffmpeg-x86_64-n4.4.1/lib
-includedir=/home/marcu/ffmpeg-x86_64-n4.4.1/include
+libdir=/home/marcu22/ffmpeg-x86_64-n4.4.1/lib
+includedir=/home/marcu22/ffmpeg-x86_64-n4.4.1/include
 
 Name: libavutil
 Description: FFmpeg utility library
@@ -10,5 +10,5 @@ Requires:
 Requires.private: 
 Conflicts:
 Libs: -L${libdir}  -lavutil 
-Libs.private: -pthread -lm -lXv -lX11 -lXext
+Libs.private: -pthread -lm
 Cflags: -I${includedir}

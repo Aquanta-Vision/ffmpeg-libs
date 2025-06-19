@@ -1,7 +1,7 @@
-prefix=/home/marcu/ffmpeg-x86_64-n4.4.1
+prefix=/home/marcu22/ffmpeg-x86_64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/marcu/ffmpeg-x86_64-n4.4.1/lib
-includedir=/home/marcu/ffmpeg-x86_64-n4.4.1/include
+libdir=/home/marcu22/ffmpeg-x86_64-n4.4.1/lib
+includedir=/home/marcu22/ffmpeg-x86_64-n4.4.1/include
 
 Name: libavformat
 Description: FFmpeg container format library
@@ -10,5 +10,5 @@ Requires:
 Requires.private: libavcodec >= 58.134.100, libswresample >= 3.9.100, libavutil >= 56.70.100
 Conflicts:
 Libs: -L${libdir}  -lavformat 
-Libs.private: -lm -lbz2 -lz
+Libs.private: -lm
 Cflags: -I${includedir}

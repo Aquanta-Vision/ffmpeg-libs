@@ -1,7 +1,7 @@
-prefix=/home/marcu/ffmpeg-aarch64-n4.4.1
+prefix=/home/marcu22/ffmpeg-aarch64-n4.4.1
 exec_prefix=${prefix}
-libdir=/home/marcu/ffmpeg-aarch64-n4.4.1/lib
-includedir=/home/marcu/ffmpeg-aarch64-n4.4.1/include
+libdir=/home/marcu22/ffmpeg-aarch64-n4.4.1/lib
+includedir=/home/marcu22/ffmpeg-aarch64-n4.4.1/include
 
 Name: libavfilter
 Description: FFmpeg audio/video filtering library
